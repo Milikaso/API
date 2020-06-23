@@ -1,0 +1,63 @@
+
+
+
+GET http://localhost:3000 
+
+### 
+GET http://localhost:3000/empleados/5
+###
+GET http://localhost:3000/empleados
+###
+POST http://localhost:3000/empleados/create 
+Content-Type: application/json
+
+{
+ "nombre": "Miguel",
+ "dni": "029508",
+ "sexo": "M",
+ "fecha_nac":"1996-10-19",
+ "salario":"29900",
+ "cargo":"Director",
+ "fk_departamento":"1"
+}
+
+
+###
+
+DELETE http://localhost:3000/empleados/delete/9
+
+###
+
+PUT http://localhost:3000/empleados/update/2
+Content-Type: application/json
+
+{ "id":2,
+"nombre":"Joaquin",
+"sexo": "F"
+}
+
+
+
+### Departamentoss
+GET http://localhost:3000/departamentos
+
+
+###
+DELETE http://localhost:3000/departamentos/delete/6
+
+###
+
+POST http://localhost:3000/departamentos/create   
+Content-Type: application/json
+
+{
+"id": "6", "nombre_departamento": "Barrer", "ciudad": "Jarama"
+}
+
+###
+PUT http://localhost:3000/departamentos/update
+Content-Type: application/json
+
+{
+"id": "2", "nombre_departamento": "Financieroo", "ciudad": "barna"
+}

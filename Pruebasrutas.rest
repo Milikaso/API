@@ -1,0 +1,23 @@
+GET http://localhost:3000
+
+###
+
+GET http://localhost:3000/empleados/5
+
+###
+GET http://localhost:3000/empleados
+
+###
+
+GET http://localhost:3000/empleados/create
+
+###
+GET http://localhost:3000/empleados/edit
+
+###
+
+GET http://localhost:3000/empleados/update
+
+###
+
+GET http://localhost:3000/empleados/delete
